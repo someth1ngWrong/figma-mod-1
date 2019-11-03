@@ -1,1 +1,209 @@
 @import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap');
+
+:root {
+  --light-gray: rgba(0, 0, 0, 0.25);
+}
+
+body {
+  font-family: 'Fira Code', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FDFFF8;
+  box-sizing: border-box;
+}
+
+main {
+  width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  border-left: 1px solid var(--light-gray);
+  border-right: 1px solid var(--light-gray);
+  padding-bottom: 20vh;
+}
+
+.main__header {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.tweet {
+  display: flex;
+  padding: 24px 32px 16px 24px;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.tweet__ava {
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+}
+
+.tweet__body__header {
+  display: flex;
+  align-items: center;
+}
+.tweet__body__header * {
+  margin-right: 16px;
+}
+.tweet__body__header h3{
+  font-size: 16px;
+  font-weight: bold;
+}
+.tweet__body__header a{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+.tweet__body__header a:hover{
+  text-decoration: underline;
+}
+
+.tweet__body {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 0 16px;
+}
+
+.tweet__body__actions {
+display: flex;
+}
+.tweet__body__actions li {
+margin-right: 84px;
+font-size: 14px;
+color: rgba(0, 0, 0, 0.35);
+display: flex;
+align-items: center;
+position: relative;
+}
+.tweet__body__actions li span {
+  position: absolute;
+  left: 28px;
+}
+
+
+/*  */
+nav {
+  position: fixed;
+  left: calc((100vw-600px)/2);
+  padding: 24px; 32px; 0 0;
+}
+.nav__menu li a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 16px 32px 16px 16px;
+  color: inherit;
+  border-radius: 50px;
+}
+
+.nav__menu li:hover a {
+  background: rgba(0, 0, 0, 0.05);
+  color: #0038FF
+}
+
+.nav__menu__icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: rgb(0, 0, 0);
+  margin-right: 16px;
+}
+.nav__menu li:hover .nav__menu__icon {
+  background:  #0038FF;
+}
+.nav__menu__icon--home {
+  mask: url(../img/home-icn.svg);
+  -webkit-mask: url(../img/home-icn.svg);
+}
+.nav__menu__icon--bell {
+  mask: url(../img/bell-icn.svg);
+  -webkit-mask: url(../img/bell-icn.svg);
+}
+.nav__menu__icon--chat {
+  mask: url(../img/chat-icn.svg);
+  -webkit-mask: url(../img/chat-icn.svg);
+}
+.nav__menu__icon--bookmark {
+  mask: url(../img/bookmark-icn.svg);
+  -webkit-mask: url(../img/bookmark-icn.svg);
+/* .nav__menu li:hover .nav__menu__icon {
+  background-color: #0038FF;
+}
+.nav__menu__icon--home {
+  mask: url(../img/home-icn.svg);
+  -webkit-mask: url(../img/home-icn.svg);
+}
+.nav__menu__icon--push {
+  mask: url(../img/push-icn.svg);
+  -webkit-mask: url(../img/push-icn.svg);
+}
+.nav__menu__icon--sms {
+  mask: url(../img/sms-icn.svg);
+  -webkit-mask: url(../img/sms-icn.svg);
+}
+.nav__menu__icon--bookmarks {
+  mask: url(../img/bookmarks-icn.svg);
+  -webkit-mask: url(../img/bookmarks-icn.svg); */
+}
+
+
+.nav__btn {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #0038FF;
+  padding: 16px 55px;
+  text-decoration: none;
+  margin-top: 32px;
+  display: block;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav__btn:hover {
+  filter: brightness(1.25);
+}
+
+
+aside {
+  position: absolute;
+  right: calc()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */

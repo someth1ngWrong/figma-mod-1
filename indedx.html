@@ -6,22 +6,104 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
+    <nav>
+      <ul class="nav__menu">
+        <li>
+          <a href="#">
+            <div class="nav__menu__icon nav__menu__icon--home"></div>
+            Главная
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav__menu__icon nav__menu__icon--bell"></div>
+            Уведомления
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav__menu__icon nav__menu__icon-chat"></div>
+            Сообщения
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="nav__menu__icon nav__menu__icon--bookmark"></div>
+            Закладки</a>
+        </li>
+      </ul>
+      <a class="nav__btn" href="">Высказаться</a>
+    </nav>
+
+    <aside>
+    <ul>
+      <li>Ваши друзья</li>
+      <li class="user">
+        <img src="img/ava-katya.png" alt="Картинка пользователя">
+        <div class="user__info">
+          <div class="user__info__name">
+            Катерина Кацман
+          </div>
+          <a class="user__info__nick" href="#">
+            @katya-k
+          </a>
+        </div>
+      </li>
+      <li class="user">
+        <img src="img/ava-inna.png" alt="Картинка пользователя">
+        <div class="user__info">
+          <div class="user__info__name">
+            Инна Берг
+          </div>
+          <a class="user__info__nick" href="#">
+            @inna-b
+          </a>
+        </div>
+      </li>
+      <li class="user">
+        <img src="img/ava-dale.png" alt="Картинка пользователя">
+        <div class="user__info">
+          <div class="user__info__name">
+            Агент Д
+          </div>
+          <a class="user__info__nick" href="#">
+            @win-twin
+          </a>
+        </div>
+      </li>
+      <li class="user">
+        <img src="img/ava-platon.png" alt="Картинка пользователя">
+        <div class="user__info">
+          <div class="user__info__name">
+            Человек в облаках
+          </div>
+          <a class="user__info__nick" href="#">
+            @ilovesocrates
+          </a>
+        </div>
+      </li>
+      <li>Показать еще</li>
+    </ul>
+  </aside>
+
+
 
     <main>
-      <header>
+      <header class="main__header">
         <h2>Последние высказывания</h2>
         <img src="img/sort-icn.svg" alt="Иконка сортировки">
       </header>
 
-      <article>
-        <img src="img/ava-vasya.png" alt="Аватарка пользователя">
+      <article class="tweet">
+        <img class="tweet__ava" src="img/ava-vasya.png" alt="Аватарка пользователя">
         <div>
-          <header>
+          <header class="tweet__body__header">
             <h3>Василий Ночь</h3>
             <a href="#">@vasya.night</a>
             <a href="#">11 октября</a>
           </header>
-          <p> Когда вы полагаете, что именно ваш самолет разобьется, или что именно ваш проект все назовут идиотским, или что именно вас все высмеют и растопчут, вы по сути говорите себе: «Я — исключение из правила, я не такой, как все остальные; я уникальный и особенный». Это чистой воды нарциссизм. Вы полагаете, что именно ваши проблемы заслуживают особого обращения, что именно ваши проблемы уникальны и не подчиняются законам физической вселенной.</p>
+          <p class="tweet__body"> Когда вы полагаете, что именно ваш самолет разобьется, или что именно ваш проект все назовут идиотским, или что именно вас все высмеют и растопчут, вы по сути говорите себе: «Я — исключение из правила, я не такой, как все остальные; я уникальный и особенный». Это чистой воды нарциссизм. Вы полагаете, что именно ваши проблемы заслуживают особого обращения, что именно ваши проблемы уникальны и не подчиняются законам физической вселенной.</p>
+          <ul class="tweet__body__actions">
           <li>
             <img src="img/reply-icn.svg" alt="">
           </li>
@@ -36,6 +118,61 @@
           <li>
             <img src="img/link-icn.svg" alt="">
           </li>
+        </ul>
+        </div>
+      </article>
+      <article class="tweet">
+        <img class="tweet__ava" src="img/ava-vasya.png" alt="Аватарка пользователя">
+        <div>
+          <header class="tweet__body__header">
+            <h3>Кккодерка</h3>
+            <a href="#">@kkkoderka</a>
+            <a href="#">11 октября</a>
+          </header>
+          <p class="tweet__body"> Мы разрабатываем и письма, и сайты, используя одни и те же языки — HTML и CSS. Происходящее в исходном коде html-писем совсем не похоже на то, что можно увидеть в среде разработки современного фронтендера. Вам даже может показаться, что вы вернулись в веб-средневековье.</p>
+          <ul class="tweet__body__actions">
+          <li>
+            <img src="img/reply-icn.svg" alt="">
+          </li>
+          <li>
+            <img src="img/retweet-icn.svg" alt="">
+            <span>10</span>
+          </li>
+          <li>
+            <img src="img/like-icn.svg" alt="">
+            <span>32</span>
+          </li>
+          <li>
+            <img src="img/link-icn.svg" alt="">
+          </li>
+        </ul>
+        </div>
+      </article>
+      <article class="tweet">
+        <img class="tweet__ava" src="img/ava-vasya.png" alt="Аватарка пользователя">
+        <div>
+          <header class="tweet__body__header">
+            <h3>Мудрая выдра</h3>
+            <a href="#">@wisewise</a>
+            <a href="#">11 октября</a>
+          </header>
+          <p class="tweet__body"> Мы все переоцениваем свои навыки и стремления и недооцениваем навыки и стремления других. Большинство людей уверены, что обладают интеллектом выше среднего и лучше справляются практически со всеми задачами, — особенно если это абсолютно не так.</p>
+          <ul class="tweet__body__actions">
+          <li>
+            <img src="img/reply-icn.svg" alt="">
+          </li>
+          <li>
+            <img src="img/retweet-icn.svg" alt="">
+            <span>10</span>
+          </li>
+          <li>
+            <img src="img/like-icn.svg" alt="">
+            <span>32</span>
+          </li>
+          <li>
+            <img src="img/link-icn.svg" alt="">
+          </li>
+        </ul>
         </div>
       </article>
     </main>
